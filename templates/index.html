@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jovian</title>
+    <link rel="stylesheet" type="text/css" href="static/style.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Jovian Careers</h2>
+        <img src="/static/images/two-tone-ink-cloud.webp" height="400">
+        <h3>About Jovian</h3>
+        <p> Lorem ipsum odor amet. Kramer: Hey! Happy Festivus, everyone! Kramer: Hey! Happy Festivus, everyone! Kramer:
+            Hey! Happy Festivus, everyone! Kramer: Hey! Happy Festivus, everyone!
+
+            Kramer: Hey! Happy Festivus, everyone! Kramer: Hey! Happy Festivus, everyone! Kramer: Hey! Happy Festivus,
+            everyone! Kramer: Hey! Happy Festivus, everyone!
+
+            Kramer: Hey! Happy Festivus, everyone! Kramer: Hey! Happy Festivus, everyone! Kramer: Hey! Happy Festivus,
+            everyone! Kramer: Hey! Happy Festivus, everyone! Yada, yada, yada...</p>
+
+        <h3>Open positions</h3>
+        <div>
+            {% for job in jobs %}
+            <h4>{{job['title']}}</h4>
+            <b>Location:</b>{{job['location']}}
+            <br>
+            <button>Apply</button>
+            <hr>
+            {% endfor %}
+        </div>
+        <br>
+
+        <button>Contact Us</button>
+    </div>
+</body>
+
+</html>
